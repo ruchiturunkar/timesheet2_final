@@ -1,0 +1,16 @@
+[Unit]
+Description=Timesheet Application
+
+[Service]
+Type=simple
+User=times2
+Group=times2
+Restart=on-failure
+Environment=MIX_ENV=prod "PORT=5001"
+Environment=LANG=en_US.UTF-8
+
+WorkingDirectory=/home/lens/lens
+ExecStart=/bin/bash /home/times2/times2/start.sh
+
+[Install]
+WantedBy=multi-user.target
