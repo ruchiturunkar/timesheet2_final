@@ -2,4 +2,4 @@
 
 source ./prod-env.sh
 
-_build/prod/rel/lens/bin/lens start
+_build/prod/rel/times2/bin/times2 start
